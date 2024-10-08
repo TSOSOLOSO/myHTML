@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Background</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            animation: changeBackground 10s infinite;
+        }
+
+        @keyframes changeBackground {
+            0% { background-image: url('site/IMG-20220722-WA0041.jpg.jpg'); }
+            33% { background-image: url('site/IMG_20240109_135234.jpg.jpg'); }
+            66% { background-image: url('site/IMG_20240108_165618.jpg.jpg'); }
+            100% { background-image: url('site/20230528_195242.jpg.jpg'); }
+        }
+
+        body {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>

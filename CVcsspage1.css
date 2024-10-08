@@ -1,0 +1,352 @@
+body {
+    background-image: url(site/20230528_195242.jpg);
+    background-attachment: full;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 30;
+}
+
+.sidebar {
+    height: 100%;     
+    width: 250px;
+    position: fixed;
+    top: 0;
+   left: 0; 
+   display:block;
+   z-index: 1000;
+ 
+
+    background-repeat:inherit; 
+    padding-top: 30px;
+    transition: ease-in;
+}
+
+.content::file-selector-button {
+    display: inline-block;
+    color: #6a3983;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #680670;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+.sidebar ul {
+    list-style-type: persian;
+    padding: 5px;
+}
+
+    .sidebar ul li {
+        padding: 16px 16px;
+    }
+
+        .sidebar ul li a {
+            text-decoration: blink;
+            color: rgb(34, 34, 129);
+            display: block;
+            font: bold;
+        }
+
+            .sidebar ul li a:hover {
+                background-color: blue;
+                color: rgb(53, 14, 55);
+                
+            }
+
+            .sidebar ul li a:hover {
+                background-color: rgb(136, 155, 166);
+                
+            }
+
+            .sidebar ul li a:link {
+                display: revert;
+                padding: 1px 4px;
+                background-color: rgb(164, 145, 163);
+                color: white;
+                text-decoration: auto;
+                font: bold 100px;
+                border-radius: 4px;
+                border: outset;
+                cursor: pointer;
+            }
+
+            
+
+
+@media screen and (max-width : 1000px) {
+
+    .sidebar{
+
+        width: 100% ;
+        height: max-content ;
+        position: relative ;
+        
+    }
+
+    .sidebar ul  {
+
+        margin-block:4px,7px ;
+    }
+
+    .content {
+
+        margin-top: 0 ;
+    }
+}
+
+
+.container {
+
+    width : 1100px ;
+    margin: 0 auto ;
+    border: solid ;
+    border-block-color: black ;
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: scale(2.2);
+    }
+
+    50% {
+        transform: scale(2.6);
+    }
+}
+
+.emoji {
+    font-size: 3rem; 
+    animation: bounce 2s ease-in-out infinite;
+    display:flex; 
+}
+
+body, html {
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.cv-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #808080;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(103, 30, 119, 0.1);
+}
+
+.cv-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cv-table th,
+.cv-table td {
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #8e3e9c;
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.cv-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.cv-table tr:nth-child(even) {
+    background-color: rgb(138, 121, 159);
+}
+
+.cv-table ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 10px; /* Reduced padding for the list */
+}
+
+
+    body {
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevents interaction with bubbles */
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -150px; /* Start position below the visible area */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.9;
+    pointer-events: none; /* Prevents interaction with bubbles */
+}
+
+@keyframes bubble-rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(-1000px) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Create multiple bubbles with different sizes and timings */
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation: bubble-rise 10s infinite;
+}
+
+.bubble:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: 30%;
+    animation: bubble-rise 12s infinite;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    animation: bubble-rise 15s infinite;
+}
+
+.bubble:nth-child(4) {
+    width: 35px;
+    height: 35px;
+    left: 70%;
+    animation: bubble-rise 11s infinite;
+}
+
+.bubble:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation: bubble-rise 16s infinite;
+}
+
+.bubble:nth-child(6) {
+    width: 30px;
+    height: 30px;
+    left: 30%;
+    animation: bubble-rise 18s infinite;
+}
+
+.bubble:nth-child(7) {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    animation: bubble-rise 9s infinite;
+}
+
+.bubble:nth-child(8) {
+    width: 35px;
+    height: 35px;
+    left: 70%;
+    animation: bubble-rise 14s infinite;
+}
+
+.bubble:nth-child(9) {
+    width: 40px;
+    height: 40px;
+    left: 15%;
+    animation: bubble-rise 20s infinite;
+}
+
+.bubble:nth-child(10) {
+    width: 30px;
+    height: 30px;
+    left: 35%;
+    animation: bubble-rise 17s infinite;
+}
+
+.bubble:nth-child(11) {
+    width: 50px;
+    height: 50px;
+    left: 55%;
+    animation: bubble-rise 13s infinite;
+}
+
+.bubble:nth-child(12) {
+    width: 35px;
+    height: 35px;
+    left: 75%;
+    animation: bubble-rise 11s infinite;
+}
+
+.content {
+
+    font-display:auto;
+    font-size:20px;
+    text-align:revert;
+   
+}
+body {
+    color: white; /* Change text color to white */
+    background-color: black; /* Set background color for contrast */
+    font-family: Arial, sans-serif; /* Optional: set font */
+}
+
+form {
+    display: flex; /* Optional: use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    width: 300px; /* Set form width */
+    margin: 20px auto; /* Center the form */
+}
+
+label {
+    margin: 10px 0 5px; /* Add margin for labels */
+}
+
+input, textarea {
+    padding: 10px; /* Add padding for inputs and textarea */
+    background-color: #333; /* Dark background for inputs */
+    color: white; /* Text color for inputs */
+    border: 1px solid white; /* Border color */
+    border-radius: 4px; /* Optional: rounded corners */
+}
+
+button {
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    border: 1px solid white; /* Button border color */
+    padding: 10px; /* Button padding */
+    cursor: pointer; /* Change cursor on hover */
+    margin-top: 10px; /* Add margin above button */
+    border-radius: 4px; /* Optional: rounded corners */
+}
+
+button:hover {
+    background-color: gray; /* Change button color on hover */
+}
+
