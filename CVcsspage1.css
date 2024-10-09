@@ -6,6 +6,8 @@ body {
     background-repeat: no-repeat ;
     font-family: 'Times New Roman', Times, serif;
     opacity: 30;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -82,7 +84,7 @@ body {
             
 
 
-@media screen and (max-width : 1000px) {
+@media screen and (max-width : 768px) {
 
     .sidebar{
 
@@ -146,6 +148,7 @@ body {
 .cv-container {
     width: 80%;
     max-width: 800px;
+    min-height: 100vh;
     margin: 20px auto;
     background-color: #808080;
     border-radius: 8px;
